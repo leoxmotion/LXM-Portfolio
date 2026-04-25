@@ -41,19 +41,19 @@
 			          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
 			        </li>
 			        <li class="nav-item">
-			          <a class="nav-link" href="#">About</a>
+			          <a class="nav-link" href="#about">About</a>
 			        </li>
 			        <li class="nav-item">
-			          <a class="nav-link" href="#">Projects</a>
+			          <a class="nav-link" href="#projects">Projects</a>
 			        </li>
 			        <li class="nav-item">
-			          <a class="nav-link" href="#">Experience</a>
+			          <a class="nav-link" href="#skill">Skills</a>
 			        </li>
 			        <li class="nav-item">
-			          <a class="nav-link" href="#">Services</a>
+			          <a class="nav-link" href="#services">Services</a>
 			        </li>
 			        <li class="nav-item">
-			          <a class="nav-link" href="#">Contact</a>
+			          <a class="nav-link" href="#contact">Contact</a>
 			        </li>
 				   </ul>
 				</div>
@@ -147,7 +147,7 @@
 
 		<!-- About and Skills -->
 		<div class="row about">
-			<div class="col-md-6 col-12">
+			<div class="col-md-6 col-12" id="about">
 				<h2>About Me</h2><hr>
 				<p>
 					I am a software developer focused on building scalable frontend architectures and efficient backend systems.<br>
@@ -159,7 +159,7 @@
 					Email: leoxmotion@gmail.com
 				</p>
 
-				<div class="mt-3">
+				<div class="mt-3" id="services">
 					<h2>My Services</h2><hr>
 					<ul>
 						<li>Frontend Development</li>
@@ -201,7 +201,7 @@
 		</div>
 
 		<!-- Tech Skills Stack -->
-		<div class="row skill-stack justify-content-around">
+		<div class="row skill-stack justify-content-around" id="skill">
 			<div class="col-md-12">
 				<h2>Skill Stack</h2><hr>
 			</div>
@@ -264,7 +264,7 @@
 		</div>
 
 		<!-- Projects -->
-		<div class="row projects pt-5">
+		<div class="row projects pt-5" id="projects">
 			<h2>Featured Projects</h2><hr>
 			<div class="col-lg-3 col-md-6 col-12">
 				<div class="card">
@@ -415,9 +415,10 @@
 		</div> -->
 
 		<!-- FAQ -->
-		<div class="row mb-4 mt-3">
-			<h2>FAQ</h2>
-			<div class="col-md-6 col-12">
+		<div class="row faq align-items-start justify-content-around" id="contact">
+			<div class="col-md-4 col-12">
+			<h2>FAQ</h2><hr>
+
 				<div class="accordion" id="accordionExample">
 				  <div class="accordion-item">
 				    <h2 class="accordion-header" id="headingOne">
@@ -457,21 +458,57 @@
 				    </div>
 				  </div>
 				</div>
-			<div class="col-md-6 col-12"></div>
-			</div>
-		</div>
 
-		<!-- Contact -->
-		<div class="row">
-			<div class="col-md-8 col-12"></div>
+			</div>	
+			<div class="col-md-4 col-12">
+				<div>
+					<h2>Contact Me</h2><hr>
+
+					<form>
+						<div>
+							<label for="name" class="mb-2">Name:</label><br>
+							<input type="text" name="name">
+						</div>
+
+						<div>
+							<label for="mail" class="mb-2 mt-2">Email:</label><br>
+							<input type="email" name="mail">
+						</div>
+
+						<div>
+							<label for="message" class="mb-2 mt-2">Message:</label><br>
+							<textarea placeholder="Type your message here" width="100%"></textarea>
+						</div>
+
+						<button onclick="
+							var message = 'Thanks for contacting me, I will get back to you soon';
+							alert(message);
+						" class="button">
+							Send Message
+						</button>
+					</form>
+				</div>
+
+			</div>
+			
 		</div>
 
 		<!-- Footer -->
-		<div class="row">
-			<div class="col-md-5 col-12"></div>
-			<div class="col-md-3 col-6"></div>
-			<div class="col-md-4 col-12"></div>
-			<div class="col-12"></div>
+		<div class="row align-items-center justify-content-between footer">
+			<div class="col-md-5 col-12 footer-logo text-center">			
+				<a href="#"><h2>LXM Studio</h2></a>
+			</div>
+			<div class="col-md-5 col-12 footer-link text-center">
+				<a href="index.html">Home</a>
+				<a href="#about">About</a>
+				<a href="#projects">Projects</a>
+				<a href="#contact">Contact</a>
+
+			</div>
+			
+			<div class="col-12 text-center mt-5" style="padding-top: 30px;">
+				<p>&copy;2026 LXM Studios</p>
+			</div>
 			
 		</div>
 
