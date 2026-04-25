@@ -214,8 +214,18 @@ a.nav-link {
 	padding-top: 40px;
 }
 
-.accordion {
-	accordion-bg: #E6D3B3;
+.accordion-button {
+  background-color: #2A2420;
+  color: #E6D3B3;
+}
+
+.accordion-item {
+  background-color: #1E1A17;
+  border-color: #2A2420;
+}
+.accordion-body {
+  background-color: #1E1A17;
+  color: #A08060;
 }
 
 textarea{
@@ -257,4 +267,12 @@ input{
 
 .footer a:hover{
 	color: yellow;
+}
+
+
+hr {
+  border: none;
+  border-top: 1px solid #B89B72;
+  opacity: 0.3;
+  margin: 16px 0;
 }
