@@ -64,6 +64,13 @@ a.nav-link {
 
 }
 
+.mynav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
 .offcanvas {
 	background-color: #1E1A17;
 	border-left: 2px solid black;
@@ -113,12 +120,27 @@ a.nav-link {
 
 .stat-item{
 	border: 2px solid #1E1A17;
+	padding: 20px 10px;
+}
+
+.stat-item h5 {
+  color: #1E1A17;
+  font-size: 1rem;
 }
 
 .about {
 	background-color: rgba(30, 26, 23, 0.7);
 	color: #E6D3B3;
 	padding: 40px 30px;
+}
+
+.tech p {
+  color: #B89B72;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
 }
 
 .skill-bar {
@@ -158,7 +180,13 @@ a.nav-link {
 	margin-bottom: 25px;
 }
 
-
+.card {
+  transition: border-color 0.3s;
+}
+.card:hover {
+  border-color: #B89B72 !important;
+  box-shadow: 0 4px 20px rgba(184, 155, 114, 0.15);
+}
 
 .projects {
 	color: #E6D3B3;
@@ -173,7 +201,7 @@ a.nav-link {
 	background-color: rgba(30, 26, 23, 0.7) !important;
 	padding-bottom: 20px;
 	margin-bottom: 10px;
-	border: 1px solid #E6D3B3 !important;
+	border: 1px solid #E6D3B3;
 	/*height: 70% !important;*/
 }
 
@@ -210,33 +238,37 @@ a.nav-link {
 
 .faq{
 	color: #E6D3B3;
-	margin-bottom: 50px;
-	padding-top: 40px;
+	/*margin-bottom: 50px;
+	padding-top: 40px;*/
 }
 
 .accordion-button {
-  background-color: #2A2420;
-  color: #E6D3B3;
+  background-color: #2A2420 !important;
+  color: #E6D3B3 !important;
 }
 
 .accordion-item {
-  background-color: #1E1A17;
-  border-color: #2A2420;
+  background-color: #1E1A17 !important;
+  border: 2px solid #A08060 !important;
 }
 .accordion-body {
-  background-color: #1E1A17;
-  color: #A08060;
+  background-color: #1E1A17 !important;
+  color: #A08060 !important;
 }
 
 textarea{
 	width: 300px;
 	height: 150px;
 	max-height: 250px;
+	background-color: #1E1A17;
+	color: #E6D3B3;
 }
 
 input{
 	width: 300px;
 	height: 40px;
+	background-color: #1E1A17;
+	color: #E6D3B3;
 }
 
 .button{
@@ -269,10 +301,21 @@ input{
 	color: yellow;
 }
 
+.footer-link a {
+  margin: 0 14px;
+  font-size: 0.9rem;
+}
 
-hr {
-  border: none;
-  border-top: 1px solid #B89B72;
-  opacity: 0.3;
-  margin: 16px 0;
+.skill-stack,
+.projects,
+.faq {
+  padding: 60px 40px;
+}
+
+
+@media (max-width: 576px) {
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.3rem; }
+  a.navbar-brand { font-size: 1.1rem; }
 }
